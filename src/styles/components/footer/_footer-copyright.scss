@@ -1,0 +1,12 @@
+.FooterCopyright {
+  display: flex;
+  background-color: $footer-copyright-bg;
+  color: $footer-text;
+  justify-content: space-between;
+  padding: 16px 168px;
+
+  &-text {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
