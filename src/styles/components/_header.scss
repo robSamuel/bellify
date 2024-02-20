@@ -1,0 +1,206 @@
+.Header {
+  background-color: $header-bg;
+  width: 100%;
+
+  &-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 84px;
+    margin-right: 34px;
+  }
+
+  &-logo {
+    margin-bottom: 0;
+  }
+
+  &-logo img {
+    height: 35.87px;
+  }
+
+  &-row {
+    align-items: center;
+    display: flex;
+  }
+
+  &-links {
+    align-items: center;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  &-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-link,
+  &-icon {
+    color: $header-text;
+    font-family: $font-primary;
+    font-size: clamp(14px, 0.729vw, 18px);
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    margin-left: 44px;
+    margin-right: 44px;
+    text-decoration: none;
+  }
+
+  &-icon {
+    margin-right: 26px;
+    margin-left: 26px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.heart {
+      color: $pink;
+    }
+
+    &.store {
+      position: relative;
+    }
+  }
+
+  &-button {
+    background-color: $header-bg-button;
+    color: $header-bg;
+    height: 75px;
+    line-height: 75px;
+    font-family: $font-primary;
+    font-size: 18px;
+    font-weight: 400;
+    width: 182px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &-hamburger {
+    display: none;
+  }
+
+  @include media-breakpoint-down(xxxl) {
+    &-link,
+    &-icon {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    &-link,
+    &-icon {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &-container {
+      margin-left: 42px;
+      margin-right: 16px;
+    }
+    &-menu {
+      margin-right: 20px;
+    }
+    &-link,
+    &-icon {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &-button {
+      width: 160px;
+      font-size: 16px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &-logo img {
+      height: auto;
+      width: 152px;
+    }
+    &-button {
+      font-size: 14px;
+      letter-spacing: 0;
+      padding: 0;
+      width: 142px;
+    }
+
+    &-menu {
+      margin-right: 0;
+    }
+    &-link,
+    &-icon {
+      font-size: 11px;
+    }
+    &-button {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &-container {
+      height: 52px;
+    }
+
+    &-hamburger {
+      display: block;
+      color: $white;
+      width: 20px;
+    }
+
+    &-button {
+      width: 150px;
+      font-size: 14px;
+    }
+
+    &-row {
+      height: 0;
+      left: 0;
+      position: absolute;
+      top: 70px;
+      transition: height 0.3s ease;
+      width: 100%;
+    }
+
+    &-menu {
+      background-color: $header-bg;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 22px;
+      transition: height 0.3s ease;
+      width: 100vw;
+      z-index: 10;
+      margin-right: 0;
+    }
+
+    &-links {
+      flex-direction: column;
+    }
+
+    &-hamburgerCheck:checked ~ &-row,
+    &-hamburgerCheck:checked ~ &-row > &-menu {
+      height: 100vh;
+      transition: height 0.3s ease;
+      width: 100%;
+    }
+
+    &-item {
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      font-size: 14px;
+    }
+  }
+}

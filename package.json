@@ -1,5 +1,5 @@
 {
-  "name": "liquid-web",
+  "name": "liquid-desing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,13 +14,14 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bootstrap": "^5.3.2",
     "next": "14.1.0",
+    "prop-types": "^15.8.1",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.70.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "sass": "^1.70.0"
   }
 }
