@@ -1,10 +1,13 @@
-// External Styles
-@import "./vendors/vendor";
+@import "base/grid-custom";
 
-// Base Styles
-@import "./base/fonts";
-@import "./base/variables";
+// vendor
+@import "vendor/vendor";
 
+// base
+@import "base/fonts";
+@import "base/variables";
 
-// Components
-@import "./components/footer";
+// components
+@import "components/banner";
+@import "components/footer";
+@import "components/header";
