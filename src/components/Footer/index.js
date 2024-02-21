@@ -1,11 +1,11 @@
-import FooterBody from "./FooterMain";
+import FooterMain from "./FooterMain";
 import FooterNewsletter from "./FooterNewsletter";
 import FooterCopyright from "./FooterCopyright";
 
 const Footer = () => {
   return (
     <footer className="Footer">
-      <FooterBody />
+      <FooterMain />
       <div className="Footer-divider" />
       <FooterNewsletter />
       <FooterCopyright />
