@@ -1,0 +1,21 @@
+.FooterMain {
+  padding: 67px 168px;
+
+  &-section {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+}
