@@ -1,9 +1,12 @@
-import Link from 'next/link';
-
+import Banner from '@/components/Banner';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 export default function Home() {
   return (
     <main>
-      <Link href="/products" >Products</Link>
+      <Banner />
+      <Header />
+      <Footer />
     </main>
   );
 };
