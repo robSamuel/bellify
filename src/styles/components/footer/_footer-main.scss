@@ -38,4 +38,17 @@
       margin-bottom: 0;
     }
   }
+
+  &-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-icon {
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

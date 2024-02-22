@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import GooglePlayStore from "@/assets/images/google-play-store.svg";
 import AppStore from "@/assets/images/app-store.svg";
+import Twitter from "@/assets/images/twitter.svg";
+import Facebook from "@/assets/images/facebook.svg";
+import Instagram from "@/assets/images/instagram.svg";
 import { storeLinks, aboutLinks, helpLinks } from "@/data/footer";
 
 const FooterMain = () => {
@@ -17,8 +20,8 @@ const FooterMain = () => {
         <h3 className="FooterMain-title">{title}</h3>
         {listItems}
       </div>
-    )
-  }
+    );
+  };
 
   return (
     <div className="FooterMain">
@@ -32,6 +35,11 @@ const FooterMain = () => {
       {renderList(helpLinks)}
       <div className="FooterMain-section">
         <h3 className="FooterMain-title">Síguenos</h3>
+        <div className="FooterMain-icons">
+          <Image className="FooterMain-icon" src={Twitter} alt="Twitter icon" height="auto" width="auto" />
+          <Image className="FooterMain-icon" src={Facebook} alt="Facebook icon" height="auto" width="auto" />
+          <Image className="FooterMain-icon" src={Instagram} alt="Instagram icon" height="auto" width="auto" />
+        </div>
       </div>
     </div>
   );
