@@ -1,6 +1,9 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
+import Banner from '@/components/Banner';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 import "@/styles/main.scss";
 
@@ -12,7 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Banner />
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
