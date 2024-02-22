@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { v4 } from "uuid";
 import GooglePlayStore from "@/assets/images/google-play-store.svg";
 import AppStore from "@/assets/images/app-store.svg";
 import Twitter from "@/assets/images/twitter.svg";
@@ -10,7 +11,7 @@ import { storeLinks, aboutLinks, helpLinks } from "@/data/footer";
 const FooterMain = () => {
   const renderList = ({title, items}) => {
     const listItems = items.map((item) => (
-      <Link className="FooterMain-link" href={item.url}>
+      <Link key={v4()} className="FooterMain-link" href={item.url}>
         {item.text}
       </Link>
     ));
