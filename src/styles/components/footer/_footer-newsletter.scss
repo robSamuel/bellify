@@ -11,6 +11,7 @@
   }
 
   &-title {
+    font-family: $font-primary;
     font-size: 30px;
     font-weight: 300;
     line-height: 20px;
@@ -47,9 +48,11 @@
 
   &-button {
     display: flex;
+    align-items: center;
     background-color: $footer-button-bg;
     border: none;
     height: 42px;
+    justify-content: center;
     width: 53px;
   }
 }
