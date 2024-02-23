@@ -34,6 +34,7 @@
   }
 
   &-input {
+    border: none;
     height: 42px;
     margin-right: 20px;
     width: 287px;
@@ -45,6 +46,7 @@
   }
 
   &-button {
+    display: flex;
     background-color: $footer-button-bg;
     border: none;
     height: 42px;
