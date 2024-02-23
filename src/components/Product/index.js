@@ -44,7 +44,7 @@ const Product = () => {
               alt="Product-primary"
             />
           </div>
-          <div className="Product-preview">
+          <div className="Product-preview play">
             <Image src={play} width={20} height={20} alt="Product-peview" />
           </div>
         </div>
