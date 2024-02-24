@@ -1,0 +1,27 @@
+.Button {
+    display: block;
+    padding: 19px 50px 22px;
+    border: 1px solid $pink;
+    background-color: $pink;
+    color: $white;
+    font-family: $font-primary;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-align: center;
+
+    &.outline {
+        color: $pink;
+        background-color: $white;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
