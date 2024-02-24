@@ -53,6 +53,11 @@
         margin-top: 0;
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      height: 48.8px;
+      width: 149.19px;
+    }
   }
 
   &-title {
