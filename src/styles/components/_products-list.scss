@@ -6,6 +6,11 @@
   padding-top: 102.5px;
   padding: 102.5px 143px;
 
+  @include media-breakpoint-down(xxl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   &-title {
     color: $list-title;
     font-size: 36px;
@@ -21,6 +26,12 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    // flex-wrap: wrap;
+
+    @include media-breakpoint-down(xxl) {
+      // margin-left: 0;
+      // margin-right: 0;
+    }
   }
 
   &-item {
@@ -36,10 +47,22 @@
     justify-content: center;
     margin-bottom: 23px;
     width: 400px;
+
+    @include media-breakpoint-down(xxl) {
+      height: 141px;
+      width: 174px;
+      // background-color: red;
+    }
   }
 
   &-image{
-    
+    height: auto;
+    width: auto;
+
+    @include media-breakpoint-down(xxl) {
+      height: 120px;
+      width: auto;
+    }
   }
 
   &-name {

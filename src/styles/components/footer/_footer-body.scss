@@ -2,10 +2,24 @@
   background-color: $footer-bg;
   color: $footer-text;
 
+  // @include media-breakpoint-down(sm) {
+  //   background-color: aqua;
+  // }
+
   &-divider {
-    border: 1px solid #A191B2;
+    border: 1px solid $purple-glossy;
     height: 1px;
     margin-left: 168px;
     margin-right: 168px;
+
+    @include media-breakpoint-down(xxl) {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 34px;
+      margin-right: 34px;
+    }
   }
 }

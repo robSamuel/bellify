@@ -28,13 +28,15 @@ const FooterMain = () => {
     <div className="FooterMain">
       <div className="FooterMain-section">
         <h3 className="FooterMain-title">App</h3>
-        <Image className="FooterMain-store" src={GooglePlayStore} width="auto" height="auto" alt="Google Play Store" />
-        <Image className="FooterMain-store" src={AppStore} width="auto" height="auto" alt="App Store" />
+        <div className="FooterMain-stores">
+          <Image className="FooterMain-store" src={GooglePlayStore} width="auto" height="auto" alt="Google Play Store" />
+          <Image className="FooterMain-store" src={AppStore} width="auto" height="auto" alt="App Store" />
+        </div>
       </div>
       {renderList(storeLinks)}
       {renderList(aboutLinks )}
       {renderList(helpLinks)}
-      <div className="FooterMain-section">
+      <div className="FooterMain-section FooterMain-socials">
         <h3 className="FooterMain-title">Síguenos</h3>
         <div className="FooterMain-icons">
           <Image className="FooterMain-icon" src={Twitter} alt="Twitter icon" height="auto" width="auto" />

@@ -7,7 +7,7 @@ const ProductsList = ({ title, products }) => {
     return products.map(product => (
       <div key={v4()} className="ProductsList-item">
         <div className="ProductsList-container">
-          <Image className="ProductsList-image" src={product.image} alt={product.name} />
+          <Image className="ProductsList-image" src={product.image} width="auto" height="auto" alt={product.name} />
         </div>
         <span className="ProductsList-name">{product.name}</span>
         <span className="ProductsList-price">{product.price}</span>
