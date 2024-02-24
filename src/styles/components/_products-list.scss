@@ -1,0 +1,112 @@
+.ProductsList {
+  display: flex;
+  border-top: 1px solid $gray-light;
+  flex-direction: column;
+  padding-bottom: 102.5px;
+  padding-top: 102.5px;
+  // padding: 102.5px 143px;
+
+  @include media-breakpoint-down(xxl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-title {
+    color: $list-title;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 79px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+      margin-bottom: 49px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    column-gap: 20px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    // flex-wrap: wrap;
+
+    @include media-breakpoint-down(xl) {
+      // margin-left: 0;
+      // margin-right: 0;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      
+      gap: 20px;
+      justify-content: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    background-color: $gray-bright;
+    height: 325px;
+    justify-content: center;
+    margin-bottom: 23px;
+    width: 400px;
+
+    @include media-breakpoint-down(xxl) {
+      height: 141px;
+      width: 174px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &-image{
+    height: auto;
+    width: auto;
+
+    @include media-breakpoint-down(xxl) {
+      height: 120px;
+      width: auto;
+    }
+  }
+
+  &-name {
+    color: $gray-dark;
+    font-weight: 500;
+    font-family: $font-primary;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 14px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-price {
+    color: $gray-dark;
+    font-weight: 700;
+    font-family: $font-primary;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
